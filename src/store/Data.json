@@ -1,0 +1,18 @@
+{
+    "homeTabList": [
+    { "name": "mails", "icon": "mail", "label": "Mails" },
+    { "name": "alarms", "icon": "alarm", "label": "Alarms" },
+    { "name": "movies", "icon": "movie", "label": "Movies" },
+    { "name": "photos", "icon": "photo", "label": "Photos" },
+    { "name": "videos", "icon": "slow_motion_video", "label": "Videos" },
+    { "name": "addressbook", "icon": "people", "label": "Address Book" }
+  ],
+  "appsTabsList": [
+    { "name": "todos", "icon": "add_task", "label": "Todos" },
+    { "name": "moneyBalls", "icon": "savings", "label": "MoneyBalls" },
+    { "name": "forms", "icon": "description", "label": "Forms" },
+    { "name": "jobs", "icon": "savings", "label": "Jobs" },
+    { "name": "videos", "icon": "slow_motion_video", "label": "Videos" },
+    { "name": "addressbook", "icon": "people", "label": "Address Book" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "vitevue3quasargasapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "add:view": "node scripts/create-view.js",
+    "build": "vite build --outDir gas --emptyOutDir false",
+    "gcreate": "clasp create --title \"Vuejs GAS\" --rootDir ./gas",
+    "gstart": "clasp push --watch",
+    "buildgas": "vite build --outDir gas --emptyOutDir false && clasp push"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.17",
+    "@tailwindcss/vite": "^4.0.7",
+    "axios": "^1.7.9",
+    "pinia": "^3.0.1",
+    "prompts": "^2.4.2",
+    "quasar": "^2.17.7",
+    "tailwindcss": "^4.0.7",
+    "vite-plugin-singlefile": "^2.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.5.0",
+    "@quasar/vite-plugin": "^1.9.0",
+    "@types/google-apps-script": "^1.0.96",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass-embedded": "^1.80.2",
+    "vite": "^6.1.0"
+  }
+}
