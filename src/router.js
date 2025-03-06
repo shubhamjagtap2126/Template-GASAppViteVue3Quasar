@@ -8,11 +8,11 @@ const routes = [
     name: "index",
     component: () => import("./layout/PublicLayout.vue"),
     children: [
-      { path: "", name: "Home", component: () => import("./views/HelloWorld.vue") },
+      { path: "", name: "Home", component: () => import("./views/home.vue") },
+      { path: "contact", name: "Contact", component: () => import("./views/Contact.vue") },
+      { path: "about", name: "about", component: () => import("./views/About.vue") },
       // { path: "login", name: "login", component: Login },
       // { path: "signup", name: "signup", component: Signup },
-      // { path: 'contact', name: 'Contact', component: () => import('./views/Contact.vue') },
-      // { path: "about", name: "about", component: () => import("./views/About.vue") },
     ],
   },
   {
@@ -21,7 +21,7 @@ const routes = [
     meta: { requiresAuth: true }, // Add a meta property for authentication
     component: () => import("./layout/AuthLayout.vue"),
     children: [
-      { path: "", name: "AuthHome", component: () => import("./views/HelloWorld.vue") },
+      { path: "", name: "AuthHome", component: () => import("./views/home.vue") },
       // { path: "todo", name: "todo", component: () => import("./views/TodoApp.vue") },
       // { path: "products", name: "Products", component: () => import("./views/Products.vue") },
       // { path: "forms", name: "Forms", component: () => import("./views/Forms.vue") },
@@ -33,7 +33,7 @@ const routes = [
     component: () => import("./layout/AdminLayout.vue"),
     meta: { requiresAdmin: true, requiresAuth: true }, // Requires both authentication and admin role
     children: [
-      { path: "", name: "AdminHome", component: () => import("./views/HelloWorld.vue") },
+      { path: "", name: "AdminHome", component: () => import("./views/home.vue") },
       // { path: "dashboard", name: "Dashboard", component: () => import("./views/Dashboard.vue") },
       // { path: 'users', name: 'Users', component: () => import('./views/Users.vue') },
     ],

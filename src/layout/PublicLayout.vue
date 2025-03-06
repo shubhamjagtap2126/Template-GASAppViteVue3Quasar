@@ -47,11 +47,8 @@ const drawerOpen = ref(false); // Controls the visibility of the mobile drawer
 
 // Define the navigation links
 const navLinks = [
-  { label: "Testing", to: "/about" },
-  { label: "Ticketmania", to: "/tickets" },
-  { label: "Mail", to: "/mail" },
-  { label: "Whatsapp", to: "/whatsapp" },
-  { label: "Youtube", to: "/youtube" },
+  { label: "About", to: "/about" },
+  { label: "Contact", to: "/contact" },
   { label: "User", to: "/u" },
   { label: "Admin", to: "/admin" },
 ];

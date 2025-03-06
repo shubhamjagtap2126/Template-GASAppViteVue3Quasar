@@ -23,13 +23,13 @@ export const useJasonData = defineStore("jsonData", () => {
   return { data };
 });
 
-
 // *********=============== ✨ Store User Authentication 🌟  ===============********* //
 // localStorage.setItem("user", JSON.stringify({name: 'SJ', email: 'zL6Fg@example.com'}))
 // localStorage.setItem("user", JSON.stringify({name: 'SJ', email: 'zL6Fg@example.com', isAdmin: true}))
 
 export const useAuthStore = defineStore("auth", () => {
-  const user = ref(JSON.parse(localStorage.getItem("user")) || null);
+  if (!localStorage.getItem("user")) JSON.stringify({ name: "SJ", email: "zL6Fg@example.com", isAdmin: true });
+  const user = ref(JSON.parse(localStorage.getItem("user")));
   const isAuthenticated = ref(user ? true : false);
   // const token = ref(JSON.parse(localStorage.getItem("token")) || null);
   const loading = ref(false);
